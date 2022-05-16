@@ -1,0 +1,144 @@
+@import url("app.css");
+
+/* 动画 */
+@keyframes pane-left{
+    0% {
+        position: relative;
+        opacity: 0;
+        bottom: 200px;
+    }
+    100%{
+        position: relative;
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+@keyframes pane-right {
+    0% {
+        position: relative;
+        opacity: 0;
+        top: 200px;
+    }
+
+    100% {
+        position: relative;
+        opacity: 1;
+        top: 0px;
+    }
+}
+@keyframes title{
+    0% {
+        position: relative;
+        opacity: 0;
+        right: 50px;
+    }
+    50% {
+        position: relative;
+        opacity: 0;
+        right: 50px;
+    }
+    100% {
+        position: relative;
+        opacity: 1;
+        right: 0px;
+    }
+}
+@keyframes form {
+    0% {
+        position: relative;
+        opacity: 0;
+        left: 50px;
+    }
+
+    50% {
+        position: relative;
+        opacity: 0;
+        left: 50px;
+    }
+
+    100% {
+        position: relative;
+        opacity: 1;
+        left: 0px;
+    }
+}
+/* 主样式 */
+html,body{
+    overflow: hidden;
+}
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/library/imgs/background.jpeg);
+}
+
+/* 登录面板样式 */
+.login-pane{
+    width: 800px;
+    height: 500px;
+}
+.login-pane .login-pane-left,.login-pane-right{
+    display: flex;
+    float: left;
+    height: 100%;
+}
+.login-pane .login-pane-left{
+    margin-top: -50px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 32px;
+    color: white;
+    background-color: #27b0f5;
+    border-radius: 6px 0px 0px 6px;
+    animation: pane-left 1s;
+}
+.login-pane .login-pane-left .title{
+    text-align: right;
+    animation: title 2s;
+}
+
+/* 登录表单样式 */
+.login-pane .login-pane-right{
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0px 6px 6px 0px;
+    padding-left: 48px;
+    padding-right: 48px;
+    animation: pane-right 1s;
+}
+.login-pane .login-pane-right .login-form{
+    animation: form 2s;
+}
+.login-pane .login-pane-right .login-form input[type=text],input[type=password]{
+    border: transparent;
+    border-bottom: 1px solid #bbb;
+    font-family: 'Segoe UI' !important;
+    width: 100%;
+    height: 48px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    transition: all 0.5s;
+}
+.login-pane .login-pane-right .login-form input:focus{
+    border-bottom: 1px solid #27b0f5;
+}
+.login-pane .login-pane-right .login-form input[type=submit]{
+    padding: 6px 12px 6px 12px;
+    border: transparent;
+    border-radius: 4px;
+    background-color: #27b0f5;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.login-pane .login-pane-right .login-form input[type=submit]:hover{
+    opacity: 0.5;
+}
+.login-pane .login-pane-right .login-form span{
+    float: right;
+}

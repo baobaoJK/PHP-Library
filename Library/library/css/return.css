@@ -1,0 +1,74 @@
+@import url('app.css');
+
+/* bs4 */
+.col-lg-2{
+    display: flex;
+    justify-content: center;
+}
+thead th{
+    border-top: 0 !important;
+}
+th,
+td{
+    vertical-align: middle !important;
+}
+i{
+    margin-right: 8px;
+}
+
+/* 主样式 */
+.return{
+    width: 100%;
+    height: auto;
+    padding: 16px 32px;
+}
+
+/* 操作面板 */
+.operate-pane{
+    width: 100%;
+    min-height: 64px;
+    height: auto;
+}
+.operate-pane .row{
+    margin: 0 !important;
+}
+.operate-pane .search{
+    display: flex;
+}
+.operate-pane .search input{
+    margin: 0 !important;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 85%;
+}
+.operate-pane .search button{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 15%;
+}
+
+/* 图书表格样式 */
+.return-pane #return-table{
+    min-height: 650px;
+}
+.return-pane .page-box{
+    display: flex;
+    justify-content: center;
+}
+.return-pane button{
+    margin-right: 8px;
+}
+
+/* 模态框样式 */
+.modal input,
+.modal select{
+    margin: 0;
+    margin-bottom: 16px;
+    width: 70% !important;
+    text-align: left;
+}
+
+.modal label{
+    width: 30%;
+    float: left;
+}

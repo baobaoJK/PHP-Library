@@ -1,0 +1,54 @@
+@import url('app.css');
+
+/* 主页面样式 */
+.borrow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+/* 搜索栏样式 */
+.search-pane{
+    display: flex;
+    margin-bottom: 32px;
+}
+.search-pane #search-form{
+    display: flex;
+}
+.search-pane .search-text{
+    width: 450px;
+    height: 38px;
+    border-radius: 8px 0px 0px 8px;
+    text-align: center;
+}
+.search-pane .search-button{
+    width: 100px;
+    border: transparent;
+    border-radius: 0px 8px 8px 0px;
+    color: white;
+}
+
+/* 信息栏样式 */
+.info-pane{
+    display: flex;
+    width: 550px;
+}
+.info-pane div{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.info-pane .user #user-form{
+    display: flex;
+    flex-direction: column;
+}
+.info-pane .user input{
+    margin-top: 12px;
+    padding: 4px;
+    border-radius: 4px;
+    text-align: center;
+}

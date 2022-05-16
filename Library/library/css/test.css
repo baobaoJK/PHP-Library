@@ -1,0 +1,15 @@
+@import url('app.css');
+
+/* bs4 */
+.card{
+    box-shadow: 0px 0px 10px rgb(211, 211, 211);
+}
+.card-header{
+    background-color: white !important;
+}
+
+/* 测试页面板 */
+.test-info{
+    margin: 30px;
+    margin-top: 0px;
+}

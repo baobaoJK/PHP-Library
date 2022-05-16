@@ -1,0 +1,183 @@
+@import url('app.css');
+
+/* 动画 */
+@keyframes open{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+/* bs4 */
+.dropdown-item:active{
+    background-color: transparent !important;
+}
+
+/* 面板样式 */
+.library{
+    min-width: 800px;
+    min-height: 600px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.pane{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 侧边栏样式 */
+.aside{
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    width: 240px;
+    height: 100%;
+    background-color: rgb(43, 144, 238);
+}
+.aside .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 64px;
+    color: white;
+    margin-top: 16px;
+}
+.aside .title h3{
+    margin: 0;
+}
+.aside .nav{
+    width: 100%;
+    margin-top: 64px;
+}
+.aside .nav .navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.aside .nav .navbar ul li a{
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s;
+    width: 220px;
+}
+.aside .nav .navbar ul li a:hover{
+    opacity: 0.8;
+}
+.aside .nav .navbar ul li a i{
+    margin-right: 16px;
+    font-size: 24px;
+}
+.aside .nav .navbar ul li a .bi-chevron-down{
+    float: right;
+    font-size: 16px;
+    margin-top: 8px;
+    transition: all 0.5s;
+}
+.aside .nav .navbar .open .bi-chevron-down{
+    transform: rotate(180deg);
+    animation: open 0.5s;
+}
+.aside .nav .navbar .item-bar{
+    width: 220px;
+}
+.aside .nav .navbar .item-bar a{
+    display: block;
+    padding-left: 40px;
+    text-decoration: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+
+/* 顶部栏样式 */
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 128px;
+    background-color: white;
+}
+.header .user-bar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+}
+.header .user-bar .username{
+    margin: 0;
+    margin-right: 16px;
+    font-size: 18px;
+    color: black;
+}
+.header .user-bar a{
+    margin-right: 16px;
+    color: black;
+}
+.header .tabs{
+    width: 100%;
+    height: 42px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid gainsboro;
+}
+.header .tabs .nav-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin-right: 16px;
+}
+.header .tabs .nav-item .active {
+    border-bottom: 2px solid #2B90EE;
+}
+.header .tabs .nav-item .nav-link{
+    padding-left: 0;
+    padding-right: 16px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent !important;
+    border-radius: 0;
+    color: black !important;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.header .tabs .nav-item .nav-link:hover {
+    color: #2B90EE !important;
+    border-bottom: 2px solid #2B90EE;
+}   
+.header .tabs .nav-item i{
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    border-radius: 18px;
+    padding-left: 2px;
+    padding-right: 2px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.header .tabs .nav-item i:hover {
+    background-color: rgb(235, 235, 235);
+    color: red;
+}
+
+/* 信息面板样式 */
+.main{
+    width: 100%;
+    height: calc(100% - 64px);
+    background-color: white;
+}
+.main iframe{
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+}

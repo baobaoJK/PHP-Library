@@ -1,0 +1,35 @@
+/* app */
+
+@font-face{
+    font-family: "milky-cn-light";
+    font-weight: 1 999;
+    src: url("/library/font/milky-cn-light.ttc");
+}
+* {
+    font-family: 'milky-cn-light';
+    outline: none;
+}
+
+input,
+select,
+button {
+    box-shadow: none !important;
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.app{
+    width: 100%;
+    height: 100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.must{
+    color: red;
+}

@@ -1,0 +1,112 @@
+@import url("app.css");
+
+/* 动画 */
+@keyframes title {
+    0% {
+        position: relative;
+        opacity: 0;
+        bottom: -32px;
+    }
+
+    50% {
+        position: relative;
+        opacity: 0;
+        bottom: -32px;
+    }
+
+    100% {
+        position: relative;
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+@keyframes line{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes subtitle {
+    0% {
+        position: relative;
+        opacity: 0;
+        top: -32px;
+    }
+
+    50% {
+        position: relative;
+        opacity: 0;
+        top: -32px;
+    }
+
+    100% {
+        position: relative;
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@keyframes start {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 主样式 */
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/library/imgs/background.jpeg);
+}
+
+/* 欢迎界面样式 */
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    color: white;
+    text-align: center;
+    letter-spacing: 32px;
+}
+.welcome .title{
+    padding-left: 32px;
+    font-size: 32px;
+    animation: title 1.5s;
+}
+.welcome .line{
+    width: 100%;
+    border-top: 1px solid white !important;
+    animation: line 1s;
+}
+.welcome .subtitle{
+    margin-top: 8px;
+    padding-left: 32px;
+    font-size: 24px;
+    animation: subtitle 1.5s;
+}
+.welcome .start{
+    display: block;
+    border-bottom: 1px solid white;
+    margin-top: 32px;
+    font-size: 18px;
+    letter-spacing: normal;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+    animation: start 2s;
+}
+.welcome .start:hover{
+    opacity: 0.5;
+}

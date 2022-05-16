@@ -1,0 +1,102 @@
+@import url('app.css');
+
+/* bs4 */
+th{
+    border-bottom: 0 !important;
+}
+.row{
+    margin: 0 !important;
+}
+.card{
+    box-shadow: 0px 0px 10px rgb(211, 211, 211);
+}
+.card-header{
+    background-color: white !important;
+}
+.col-lg-3{
+    margin-bottom: 32px;
+}
+
+/* 主样式 */
+.home{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+html,
+body,
+.app{
+    height: auto;
+}
+
+/* 信息版 */
+.info-board{
+    /* background-color: pink; */
+    min-height: 150px;
+    margin-bottom: 16px;
+}
+.info-board .book,.overtime,.borrow,.time{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    border-radius: 16px;
+    min-width: 350px;
+    min-height: 150px;
+    height: 100%;
+}
+.info-board .book{
+    background-color: #2B90EE;
+}
+.info-board .overtime{
+    background-color: #E54D52;
+}
+.info-board .borrow{
+    background-color: #5AB556;
+}
+.info-board .time{
+    background-color: #FAA64B;
+}
+.info-board i{
+    font-size: 32px;
+    padding: 8px 16px;
+    border-radius: 32px;
+    background-color: rgb(233, 233, 233, 0.2);
+}
+.info-board .title{
+    font-size: 20px;
+}
+.info-board .subtitle{
+    float: right;
+    font-size: 16px;
+}
+
+/* 开源面板 */
+.open-source-information{
+    margin: 30px;
+    margin-top: 0px;
+}
+
+/* 日志面板 */
+.log{
+    margin: 30px;
+    margin-bottom: 32px;
+}
+.log .card-body{
+    padding: 0;
+}
+.log .card-body table{
+    display: block;
+    margin: 0;
+    min-height: 100px;
+    max-height: 700px;
+}
+.log .card-body tbody{
+    display:block;
+    max-height: 650px;
+    overflow-y: auto;
+}
+.log .card-body th,td{
+    width: 400px;
+}
